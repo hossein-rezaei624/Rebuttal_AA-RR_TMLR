@@ -10,7 +10,7 @@ Please specify the CUDA and CuDNN version for jax explicitly. If you are using C
 
 Train and evaluate models through `utils/main.py`. For example, to train our model on Split CIFAR-100 with a 500 fixed-size buffer, one could execute:
 ```shell
-python utils/main.py --model AA_RR --load_best_args --dataset seq-cifar100 --buffer_size 500 --seed 0
+python utils/main.py --model aa_rr --load_best_args --dataset seq-cifar100 --buffer_size 500 --seed 0
 ```
 
 More datasets and methods are supported. You can find the available options by running:
