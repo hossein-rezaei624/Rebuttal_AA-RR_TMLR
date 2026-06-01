@@ -10,7 +10,7 @@ def get_parser() -> ArgumentParser:
     add_management_args(parser)
     add_experiment_args(parser)
     add_rehearsal_args(parser)
-    parser.add_argument('--fact_lambda', type=float, default=1.0,
+    parser.add_argument('--fact_lambda', type=float, default=0.1,
                         help='Weight of the factorization regularizer added to the CE loss.')
     return parser
 
