@@ -207,7 +207,7 @@ def train(model: ContinualModel, dataset: ContinualDataset,
 
     print(file=sys.stderr)
     if hasattr(model, 'begin_train'):
-        if model.NAME == 'pcr' or model.NAME == 'meta_sp' or model.NAME == 'delta' or model.NAME == 'ours_alpha' or model.NAME == 'aa_rr' or model.NAME == 'ours_beta' or model.NAME == 'ours_gamma' or model.NAME == 'ours_lambda':
+        if model.NAME == 'pcr' or model.NAME == 'meta_sp' or model.NAME == 'delta' or model.NAME == 'ours_alpha' or model.NAME == 'aa_rr' or model.NAME == 'ours_beta' or model.NAME == 'ours_gamma' or model.NAME == 'ours_lambda' or model.NAME == 'er_las':
             model.begin_train(dataset)
     for t in range(dataset.N_TASKS):
         model.net.train()
