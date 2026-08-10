@@ -214,7 +214,7 @@ def train(model: ContinualModel, dataset: ContinualDataset,
         train_loader, test_loader = dataset.get_data_loaders()
         
         if hasattr(model, 'begin_task'):
-            if model.NAME == 'pcr' or model.NAME == 'ours_alpha' or model.NAME == 'ours_beta' or model.NAME == 'ours_gamma' or model.NAME == 'aa_rr' or model.NAME == 'ours_lambda':
+            if model.NAME == 'pcr' or model.NAME == 'ours_alpha' or model.NAME == 'ours_beta' or model.NAME == 'ours_gamma' or model.NAME == 'aa_rr' or model.NAME == 'ours_lambda' or model.NAME == 'er_las':
                 model.begin_task(dataset, train_loader)
             else:
                 model.begin_task(dataset)
